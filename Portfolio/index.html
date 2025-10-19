@@ -36,10 +36,6 @@
         if (!localStorage.getItem(LOADER_KEY)) {
             loader.style.display = 'block';
         }
-        // Nếu không refresh lại trang và đã hiển thị loader, ẩn luôn
-        if (localStorage.getItem(LOADER_KEY)) {
-            loader.style.display = 'none';
-        }
     });
 })();
 </script>
