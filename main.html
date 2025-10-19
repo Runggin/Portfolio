@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>If you are not redirected automatically, please <a href="index.html">click here</a>.</p>
+    <script>
+    function loadPage(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            });
+    }
+</script>
+</body>
+</html>
