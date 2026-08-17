@@ -3,14 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio | Le Hai Dang</title>
+  <title>Le Hai Dang | Software Engineer</title>
   <meta name="description" content="Le Hai Dang - FullStack Developer. Projects, skills, awards and contact.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="alternate" href="index.html" hreflang="vi">
+  <link rel="alternate" href="index-vn.html" hreflang="vi">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <script src="script.js"></script>
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-text">SYSTEM BOOTING...</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+  <!-- Sidebar icons (left) -->
   <div class="sidebar" role="navigation" aria-label="Main">
     <a href="index-en.html" class="active" title="Home"><i class="fa-solid fa-home"></i></a>
     <a href="projects-en.html" title="Projects"><i class="fa-solid fa-briefcase"></i></a>
@@ -19,47 +28,54 @@
     <a href="certificates-en.html" title="Certificates"><i class="fa-solid fa-certificate"></i></a>
   </div>
 
-  <div class="lang-btn"><a href="index-vn.html">🇻🇳 Vietnamese</a></div>
+  <!-- Language switch -->
+  <div class="lang-btn"><a href="index-vn.html"><i class="fa-solid fa-globe"></i> VN</a></div>
 
-  <div class="header">
-    <h1>Hello, I'm <span style="color:#7c93ff">Le Hai Dang</span></h1>
-    <p>FullStack Developer — building things and learning every day.</p>
+  <!-- Header / hero -->
+  <div class="header fade-slide">
+    <p style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Hello World, I'm</p>
+    <h1><span>Le Hai Dang</span></h1>
+    <p>FullStack Developer — Passionate about building modern, optimized, and user-centric software solutions.</p>
   </div>
 
+  <!-- Main content -->
   <div class="container">
-    <section class="card">
+    <section class="card fade-slide">
       <div class="about-row">
         <img src="images/ảnh mặt.jpg" alt="Le Hai Dang photo" class="avatar">
         <div class="about-text">
-          <h2>About</h2>
-          <p>I studied at FPT PolySchool (Software Development). Currently studying Software Engineering at BTEC FPT British College. Passionate about programming and continuous improvement.</p>
+          <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+          <p>I graduated from FPT PolySchool (Software Development) and am currently pursuing Software Engineering at BTEC FPT British College. With a strong passion for programming, I continuously learn and apply cutting-edge technologies to real-world projects.</p>
 
           <div class="education-list" aria-label="Education">
             <div class="edu-item">
-              <strong>FPT PolySchool</strong><br>
-              Period: 2023 - 2025<br>GPA: 9/10
+              <strong><i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan)"></i> FPT PolySchool</strong>
+              <span style="color: var(--text-muted); font-size: 0.9rem;">2023 - 2025 • Major: Software Development</span><br>
+              <span style="color: #fff;">GPA: 3.8/4.0</span>
             </div>
             <div class="edu-item">
-              <strong>BTEC FPT British College</strong><br>
-              Period: 2025 - Present<br>GPA: In Progress
+              <strong><i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan)"></i> BTEC FPT British College</strong>
+              <span style="color: var(--text-muted); font-size: 0.9rem;">2025 - Present • Major: Software Engineering</span><br>
+              <span style="color: #fff;">GPA: In Progress</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
+    <section id="contact" class="card fade-slide">
+      <h2><i class="fa-solid fa-network-wired"></i> Connection Grid</h2>
       <div class="contact-row">
         <a href="https://www.facebook.com/runggin.gaming" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-        <span>Gmail: rungginff@gmail.com</span>
+        <span><i class="fa-solid fa-envelope"></i> rungginff@gmail.com</span>
         <a href="https://github.com/Runggin" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        <span>Phone: 0379 181 008</span>
+        <a href="https://www.linkedin.com/in/le-hai-dang-024419351/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <span><i class="fa-solid fa-phone"></i> 0379 181 008</span>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2025 - Le Hai Dang</p>
+      <p>&copy; 2026 - Designed by Le Hai Dang. Powered by High-Tech System.</p>
     </footer>
   </div>
 </body>

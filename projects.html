@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-text">Đang tải dữ liệu...</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+</div>
   <script src="script.js"></script>
   <div class="sidebar">
     <a href="index-vn.html" title="Trang chủ"><i class="fa-solid fa-home"></i></a>
@@ -16,38 +23,43 @@
     <a href="awards.html" title="Giải thưởng"><i class="fa-solid fa-trophy"></i></a>
     <a href="certificates.html" title="Chứng chỉ"><i class="fa-solid fa-certificate"></i></a>
   </div>
-  <div class="lang-btn"><a href="projects-en.html">🇬🇧 English</a></div>
+  <div class="lang-btn"><a href="projects-en.html"><i class="fa-solid fa-globe"></i> EN</a></div>
 
-  <div class="header"><h1>Dự án</h1><p>Những dự án tiêu biểu</p></div>
+  <div class="header fade-slide">
+    <p style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Showcase</p>
+    <h1>Dự <span>Án</span></h1>
+    <p>Những dự án tiêu biểu tôi đã thiết kế và phát triển.</p>
+  </div>
 
   <div class="container">
-    <section class="card">
-      <h2>Dự án</h2>
+    <section class="card fade-slide">
+      <h2><i class="fa-solid fa-rocket"></i> Danh sách dự án</h2>
       <div class="grid">
-        <div class="project">
-          <h3>Website giới thiệu trường học</h3>
-          <p><strong>Công cụ:</strong> HTML, CSS, JavaScript</p>
-          <p>Thời gian: 1 tuần. Kết quả: Website thân thiện, dễ dùng.</p>
+        
+        <!-- Featured Project -->
+        <div class="project featured">
+          <h3><i class="fa-solid fa-box-open"></i> Smart Mini Storage (SMS) - Da Nang</h3>
+          <p><strong>Vai trò:</strong> Fullstack Developer & Core Tech</p>
+          <p>Giải pháp lưu trữ thông minh và vận chuyển tận nơi (Doorstep logistics) dành cho Khách du lịch, Chủ shop online, và Hộ gia đình tại Đà Nẵng. Hệ sinh thái toàn diện gồm Customer Web/App, Shipper App và Hệ thống Quản trị Kho (WMS).</p>
+          <div class="tech-stack">
+            <span>FastAPI</span>
+            <span>React 19</span>
+            <span>React Native (Expo)</span>
+            <span>MongoDB</span>
+            <span>AI Chatbot (LiteLLM)</span>
+          </div>
+          <p><strong>Tính năng nổi bật:</strong> Đặt lịch gửi đồ On-Demand, Tính phí ship thông minh, Đồng hồ đếm ngược lưu kho, Theo dõi đơn hàng Real-time, Quét mã QR Seal bảo mật cho Shipper.</p>
+          <div class="project-links">
+            <a href="https://github.com/Runggin" target="_blank"><i class="fa-brands fa-github"></i> Xem Source Code</a>
+          </div>
         </div>
-        <div class="project">
-          <h3>Dự án game</h3>
-          <p><strong>Công cụ:</strong> C# Console</p>
-          <p>Thời gian: 1-3 ngày mỗi game. Kết quả: Game tối ưu, mượt.</p>
-        </div>
-        <div class="project">
-          <h3>Ứng dụng quản lý thư viện</h3>
-          <p><strong>Công cụ:</strong> C#, WinForms, SQL Server</p>
-          <p>Thời gian: 2 tuần. Ứng dụng hoạt động ổn định.</p>
-        </div>
-        <div class="project">
-          <h3>BustandStudy App</h3>
-          <p><strong>Công cụ:</strong> C#, WinForms, SQL Server</p>
-          <p>Thời gian: 3 tuần. Ứng dụng được đánh giá cao.</p>
-        </div>
+
+
+
       </div>
     </section>
 
-    <footer><p>&copy; 2025 - Lê Hải Đăng</p></footer>
+    <footer><p>&copy; 2026 - Thiết kế bởi Lê Hải Đăng. Vận hành trên Hệ thống High-Tech.</p></footer>
   </div>
 </body>
 </html>

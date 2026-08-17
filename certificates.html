@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-text">Đang tải dữ liệu...</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+</div>
   <script src="script.js"></script>
   <div class="sidebar">
     <a href="index-vn.html" title="Trang chủ"><i class="fa-solid fa-home"></i></a>
@@ -16,23 +23,27 @@
     <a href="awards.html" title="Giải thưởng"><i class="fa-solid fa-trophy"></i></a>
     <a href="certificates.html" class="active" title="Chứng chỉ"><i class="fa-solid fa-certificate"></i></a>
   </div>
-  <div class="lang-btn"><a href="certificates-en.html">🇬🇧 English</a></div>
+  <div class="lang-btn"><a href="certificates-en.html"><i class="fa-solid fa-globe"></i> EN</a></div>
 
-  <div class="header"><h1>Chứng chỉ</h1><p>Các chứng chỉ đã đạt được</p></div>
+  <div class="header fade-slide">
+    <p style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Xác thực Kỹ năng</p>
+    <h1>Chứng <span>chỉ</span></h1>
+    <p>Các chứng chỉ chuyên môn đã đạt được.</p>
+  </div>
 
   <div class="container">
-    <section class="card">
-      <h2>Chứng chỉ</h2>
+    <section class="card fade-slide">
+      <h2><i class="fa-solid fa-certificate"></i> Chứng chỉ</h2>
       <div class="grid">
-        <div class="certificate"><img src="images/certificate1.jpg" alt="C#"><h3>Chứng chỉ C# - Coursera</h3></div>
-        <div class="certificate"><img src="images/certificate2.jpg" alt="C++"><h3>Chứng chỉ C++ cơ bản - CodeLearn</h3></div>
-        <div class="certificate"><img src="images/certificate3.jpg" alt="Python"><h3>Chứng chỉ Python cơ bản - CodeLearn</h3></div>
-        <div class="certificate"><img src="images/certificate4.jpg" alt="C++ OOP"><h3>Chứng chỉ C++ OOP - CodeLearn</h3></div>
-        <div class="certificate"><img src="images/certificate5.jpg" alt="C++ Adv"><h3>Chứng chỉ C++ nâng cao - CodeLearn</h3></div>
+        <div class="certificate"><img src="images/certificate1.jpg" alt="C#"><h3><i class="fa-solid fa-check-circle" style="color: var(--accent-cyan)"></i> Chứng chỉ C# - Coursera</h3></div>
+        <div class="certificate"><img src="images/certificate2.jpg" alt="C++"><h3><i class="fa-solid fa-check-circle" style="color: var(--accent-cyan)"></i> Chứng chỉ C++ cơ bản - CodeLearn</h3></div>
+        <div class="certificate"><img src="images/certificate3.jpg" alt="Python"><h3><i class="fa-solid fa-check-circle" style="color: var(--accent-cyan)"></i> Chứng chỉ Python cơ bản - CodeLearn</h3></div>
+        <div class="certificate"><img src="images/certificate4.jpg" alt="C++ OOP"><h3><i class="fa-solid fa-check-circle" style="color: var(--accent-cyan)"></i> Chứng chỉ C++ OOP - CodeLearn</h3></div>
+        <div class="certificate"><img src="images/certificate5.jpg" alt="C++ Adv"><h3><i class="fa-solid fa-check-circle" style="color: var(--accent-cyan)"></i> Chứng chỉ C++ nâng cao - CodeLearn</h3></div>
       </div>
     </section>
 
-    <footer><p>&copy; 2025 - Lê Hải Đăng</p></footer>
+    <footer><p>&copy; 2026 - Thiết kế bởi Lê Hải Đăng. Vận hành trên Hệ thống High-Tech.</p></footer>
   </div>
 </body>
 </html>

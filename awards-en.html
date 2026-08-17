@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-text">LOADING DATA...</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+</div>
   <script src="script.js"></script>
   <div class="sidebar">
     <a href="index-en.html" title="Home"><i class="fa-solid fa-home"></i></a>
@@ -16,30 +23,38 @@
     <a href="awards-en.html" class="active" title="Awards"><i class="fa-solid fa-trophy"></i></a>
     <a href="certificates-en.html" title="Certificates"><i class="fa-solid fa-certificate"></i></a>
   </div>
-  <div class="lang-btn"><a href="awards.html">🇻🇳 Vietnamese</a></div>
+  <div class="lang-btn"><a href="awards.html"><i class="fa-solid fa-globe"></i> VN</a></div>
 
-  <div class="header"><h1>Awards</h1><p>Awards & achievements</p></div>
+  <div class="header fade-slide">
+    <p style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Achievements</p>
+    <h1>Awa<span>rds</span></h1>
+    <p>Milestones and recognitions throughout my journey.</p>
+  </div>
 
   <div class="container">
-    <section class="card">
-      <h2>Awards</h2>
+    <section class="card fade-slide">
+      <h2><i class="fa-solid fa-medal"></i> Awards</h2>
       <div class="grid">
         <div class="award">
-          <img src="images/award1.jpg" alt="Algorithm Contest">
-          <h3>Third Prize - Algorithm Contest (2025)</h3>
+          <img src="images/award1.jpg" alt="Algorithm Award">
+          <h3><i class="fa-solid fa-award" style="color: var(--accent-cyan)"></i> 3rd Place Algorithm Contest - 2025</h3>
         </div>
         <div class="award">
-          <img src="images/award2.jpg" alt="English Contest">
-          <h3>Third Prize - English Video Contest (2024)</h3>
+          <img src="images/award2.jpg" alt="English Award">
+          <h3><i class="fa-solid fa-award" style="color: var(--accent-cyan)"></i> 3rd Place English Video Contest - 2024</h3>
         </div>
         <div class="award">
           <img src="images/award3.jpg" alt="Top 100">
-          <h3>Top 100 Excellent Students - 5 Semesters (2023-2025)</h3>
+          <h3><i class="fa-solid fa-star" style="color: var(--accent-cyan)"></i> Top 100 Outstanding Students for 5 Consecutive Semesters (2023-2025)</h3>
+        </div>
+        <div class="award">
+          <img src="images/award4.jpg" alt="Top 100">
+          <h3><i class="fa-solid fa-star" style="color: var(--accent-cyan)"></i> Prospect Award FPT Hackathon - 2025</h3>
         </div>
       </div>
     </section>
 
-    <footer><p>&copy; 2025 - Le Hai Dang</p></footer>
+    <footer><p>&copy; 2026 - Designed by Le Hai Dang. Powered by High-Tech System.</p></footer>
   </div>
 </body>
 </html>

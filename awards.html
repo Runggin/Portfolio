@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-text">Đang tải dữ liệu...</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+</div>
   <script src="script.js"></script>
   <div class="sidebar">
     <a href="index-vn.html" title="Trang chủ"><i class="fa-solid fa-home"></i></a>
@@ -16,30 +23,38 @@
     <a href="awards.html" class="active" title="Giải thưởng"><i class="fa-solid fa-trophy"></i></a>
     <a href="certificates.html" title="Chứng chỉ"><i class="fa-solid fa-certificate"></i></a>
   </div>
-  <div class="lang-btn"><a href="awards-en.html">🇬🇧 English</a></div>
+  <div class="lang-btn"><a href="awards-en.html"><i class="fa-solid fa-globe"></i> EN</a></div>
 
-  <div class="header"><h1>Giải thưởng</h1><p>Những giải thưởng & thành tích</p></div>
+  <div class="header fade-slide">
+    <p style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Thành Tựu</p>
+    <h1>Giải <span>thưởng</span></h1>
+    <p>Những cột mốc đáng nhớ trong quá trình học tập và phát triển.</p>
+  </div>
 
   <div class="container">
-    <section class="card">
-      <h2>Giải thưởng</h2>
+    <section class="card fade-slide">
+      <h2><i class="fa-solid fa-medal"></i> Giải thưởng</h2>
       <div class="grid">
         <div class="award">
           <img src="images/award1.jpg" alt="Giải thuật toán">
-          <h3>Giải Ba Cuộc thi thuật toán - 2025</h3>
+          <h3><i class="fa-solid fa-award" style="color: var(--accent-cyan)"></i> Giải Ba Cuộc thi thuật toán - 2025</h3>
         </div>
         <div class="award">
           <img src="images/award2.jpg" alt="Giải English">
-          <h3>Giải Ba English Video Contest - 2024</h3>
+          <h3><i class="fa-solid fa-award" style="color: var(--accent-cyan)"></i> Giải Ba English Video Contest - 2024</h3>
         </div>
         <div class="award">
           <img src="images/award3.jpg" alt="Top 100">
-          <h3>Top 100 sinh viên xuất sắc 5 kỳ liên tiếp (2023-2025)</h3>
+          <h3><i class="fa-solid fa-star" style="color: var(--accent-cyan)"></i> Top 100 sinh viên xuất sắc 5 kỳ liên tiếp (2023-2025)</h3>
+        </div>
+        <div class="award">
+          <img src="images/award4.jpg" alt="Top 100">
+          <h3><i class="fa-solid fa-star" style="color: var(--accent-cyan)"></i> Giải triển vọng FPT Hackathon - 2025</h3>
         </div>
       </div>
     </section>
 
-    <footer><p>&copy; 2025 - Lê Hải Đăng</p></footer>
+    <footer><p>&copy; 2026 - Thiết kế bởi Lê Hải Đăng. Vận hành trên Hệ thống High-Tech.</p></footer>
   </div>
 </body>
 </html>
