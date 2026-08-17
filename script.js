@@ -40,3 +40,50 @@ setTimeout(() => {
       loader.classList.add('fade-out');
     }
   }, 4000);
+
+// Lightbox for Certificates and Awards
+document.addEventListener("DOMContentLoaded", function() {
+  // Tạo HTML cho Modal
+  const modalHtml = `
+    <div id="imageModal" class="image-modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const span = document.getElementsByClassName("modal-close")[0];
+
+  // Tìm tất cả ảnh trong award và certificate
+  const images = document.querySelectorAll(".award img, .certificate img");
+  
+  images.forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "flex"; // hiển thị tạm để tính layout
+      setTimeout(() => {
+        modal.classList.add("show");
+      }, 10);
+      modalImg.src = this.src;
+    });
+  });
+
+  // Đóng modal khi click dấu x
+  span.addEventListener("click", function() {
+    modal.classList.remove("show");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
+  });
+
+  // Đóng modal khi click ra ngoài ảnh
+  modal.addEventListener("click", function(e) {
+    if (e.target !== modalImg) {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 300);
+    }
+  });
+});
